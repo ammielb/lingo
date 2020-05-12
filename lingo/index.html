@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="sounds.js"></script>
+    <title>Document</title>
+    <script>
+    // window.onload = function() {
+    //     var menu = document.getElementById("my_audio");
+    //     menu.volume = 0.3   ;
+    //     menu.play();
+    // }
+
+    </script>
+    <style>
+        html{
+            background-image: url('lingo.jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: OCR A Std, monospace;
+            background-color:rgba(75, 75, 233, 0.795);
+        }
+        h1{
+            font-size: 100px;
+            margin: 0px;
+        }
+        button{
+            background-color: rgba(90, 148, 71, 0.712);
+            border-color:black blue black;
+            border-style:hidden;
+            width: 200px;
+            height: 100px;
+            margin-top:50px ;
+            border-radius: 10px;
+            font-size: 30px;
+
+
+        }
+        button:hover{
+            background-color: rgba(63, 102, 50, 0.712);
+        }
+        .menu_buttons{
+
+            width: 300px;
+            height:500px;
+            margin: auto;
+        }
+    </style>
+</head>
+<body  style='text-align: center;'>
+
+    <h1>LINGO</h1>
+<div class="menu_buttons">
+    <button onmouseover=" Menu_buttons_hover();" onclick="window.location.href = 'lingo.html?lijst=Alphabet'">Alphabet</button><br>
+    <button onmouseover=" Menu_buttons_hover();" onclick="window.location.href = 'lingo.html?lijst=Stad'">stad</button><br>
+    <button onmouseover=" Menu_buttons_hover();" onclick="window.location.href = 'lingo.html?lijst=Space'">space</button><br>
+</div>  
+<audio id="my_audio" src="GameMusic.mp3" loop="loop"></audio>
+</body>
+</html>

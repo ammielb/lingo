@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script src="confetti.js"></script>
+        <link rel="stylesheet" href="lingo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=100000000000, initial-scale=1.0">
+    <title>Document</title>
+    <script src="lingo.js"></script>
+    <script src="confetti.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+<script>
+    console.log(confetti.toggle);
+    confetti.toggle;
+    confetti.start
+    $(document).on("keypress", function(e){
+        
+
+                if(e.which == 13){
+
+                        checkgeuss();
+
+                }
+            });
+            console.log("acces var in html:" + acces); 
+</script>
+    <style>
+
+    </style>
+</head>
+<body onload="beginword(20);">
+
+<div class="bord">
+    <div id="thema">
+    </div>
+
+    
+
+    <div class="GUI">
+    	<div class="raadbox">
+            <div id="levens"></div>   
+            <input type="text" id="raadbox" name="gok"  maxlength="15" id="gok"><br>
+            <button onclick="checkgeuss()"> try</button>
+            <button onclick="location.reload()">reset</button>
+            <button onclick="window.location.href = 'index.html'; ">terug</button>
+            <button onclick="confetti.start">oof</button>
+            <button onclick="acces = 'all'; checkacces(acces)">geef op</button>
+ 
+            <div id="word">
+            </div>
+        
+
+        </div>
+        <div class="hangman">
+                <img src="galgje_fase0.png" id="hang" alt="" srcset="">
+        </div>
+
+    </div>
+
+ 
+</div>
+
+</body>
+</html>
